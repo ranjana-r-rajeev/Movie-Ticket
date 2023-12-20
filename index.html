@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="top">
+            <img src="data:image/png;base64,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" alt="">
+            <input type="text" placeholder="   Search for Movies,Streams,Events,Plays,Sports,Activities" name="search">
+            <div class="dropdown">
+                <button class="dropbtn">Location
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Goa</a>
+                  <a href="#">Kerala</a>
+                  <a href="#">Banglore</a>
+                </div>
+              </div>
+              <div>
+                <button class="nbutton">Sign in</button>
+              </div>
+        </div>
+    </div>
+    <div class="topnav">
+        <div class="part1">
+            <a href="">Movies</a>
+            <a href="">Streams</a>
+            <a href="">Events</a>
+            <a href="">Plays</a>
+            <a href="">Sports</a>
+            <a href="">Activities</a>
+        </div>
+        <div class="part2">
+            <a href="">ListYourShow</a>
+            <a href="">Corporates</a>
+            <a href="">Offers</a>
+            <a href="">Gift Cards</a>
+        </div>
+        
+    </div>
+    <div>
+        <img src="https://assets-in.bmscdn.com/promotions/cms/creatives/1702467795451_webslug.jpg" class="img1" alt="">
+    </div>
+    <div>
+        <h1>Recomended Movies</h1>
+    </div>
+    <div class="child1">
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MzU0LjRLIExpa2Vz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00326964-krjjjfuvju-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>Dunki</h4>
+                <h6>Comedy/Drama</h6>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MS43TSBMaWtlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00301886-sjjmjxmqpf-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>Salaar</h4>
+                <h6>Comedy/Drama</h6>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC45LzEwICA5MC44SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00310187-nbqbszhvcm-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>Sam Bahadur</h4>
+                <h6>Comedy/Drama</h6>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@like_202006280402.png,lx-24,ly-617,w-29,l-end:l-text,ie-MTEyLjhLIExpa2Vz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00321161-qnylvvbaye-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>The Lost Kingdom</h4>
+                <h6>Comedy/Drama</h6>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-OC43LzEwICA0LjRLIFZvdGVz,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00331568-bjypcwuvyz-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>Wonka</h4>
+                <h6>Comedy/Drama</h6>
+            </div>
+        </div>
+        <!-- <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-image,i-discovery-catalog@@icons@@star-icon-202203010609.png,lx-24,ly-615,w-29,l-end:l-text,ie-Ny4yLzEwICA1SyBWb3Rlcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-70,pa-8_0_0_0,l-end/et00379120-uzbnyvbdru-portrait.jpg" class="img2" alt="">
+        </div>
+        <div>
+            <img src="" class="img2" alt="">
+            <div class="inner">
+                <h4>Dunki</h4>
+                <h6>Comedy/Drama</h6>
+            </div>
+        </div> -->
+    </div>
+    <div>
+        <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-1440,h-120/stream-leadin-web-collection-202210241242.png" class="img1" alt="">
+    </div>
+    <div>
+        <h1>Best Of Live Events</h1>
+    </div>
+    <div class="child1">
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/workshop-and-more-web-collection-202211140440.png" class="img3" alt="">
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-MTArIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/comedy-shows-collection-202211140440.png" class="img3" alt="">
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/collections/tr:w-800,h-800:l-text,ie-NjUrIEV2ZW50cw%3D%3D,co-FFFFFF,ff-Roboto,fs-64,lx-48,ly-320,tg-b,pa-8_0_0_0,l-end:w-300/music-shows-collection-202211140440.png" class="img3" alt="">
+        </div>
+    </div>
+    <div>
+        <h1>Games and sports Events</h1>
+    </div>
+    <div class="child1">
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-TW9uLCAxIEphbg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00343705-nmjfmywpzk-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>Dunki</h4>
+                <h6>Games</h6>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U2F0LCAzIEZlYg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00339877-aawrawcwqj-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>Dunki</h4>
+                <h6>Games</h6>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-U3VuLCA3IEphbg%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end/et00360333-nelhudfswy-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>Dunki</h4>
+                <h6>Games</h6>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAyMCBEZWMgb253YXJkcw%3D%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00369062-ulkvsexgan-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>Dunki</h4>
+                <h6>Games</h6>
+            </div>
+        </div>
+        <div>
+            <img src="https://assets-in.bmscdn.com/discovery-catalog/events/tr:w-400,h-600,bg-CCCCCC:w-400.0,h-660.0,cm-pad_resize,bg-000000,fo-top:l-text,ie-V2VkLCAyMCBEZWM%3D,fs-29,co-FFFFFF,ly-612,lx-24,pa-8_0_0_0,l-end:l-image,i-discovery-catalog@@icons@@bundle-icon-shadow-4x.png,lx-15,ly-15,w-50,l-end/et00375808-mpvhswjvgq-portrait.jpg" class="img2" alt="">
+            <div class="inner">
+                <h4>Dunki</h4>
+                <h6>Games</h6>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
