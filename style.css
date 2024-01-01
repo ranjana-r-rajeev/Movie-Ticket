@@ -4,10 +4,13 @@ body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   overflow-x: hidden;
+  width: 1545px;
 }
 
 .wrapper{
-    padding: 0px 150px 0px 150px;
+    /* padding: 0px 150px 0px 150px; */
+    padding: 20px 160px 5px 150px;
+    width: 1543px;
 }
 img{
     height: 70px;
@@ -24,6 +27,7 @@ input{
     font-family: inherit;
 }
 .topnav {
+    width: 1545px;
   overflow: hidden;
   background-color: #e9e9e9;
 }
@@ -92,6 +96,7 @@ input{
 .part2{
     align-content: end;
     margin-left: 200px;
+    justify-content: flex-end;
 }
 .topnav a {
   float: left;
@@ -111,6 +116,7 @@ input{
     padding: 20px 160px 5px 150px;
     height: 130px;
     /* width: 90%; */
+    width: 1550px;
     border-radius: 30px 30px 30px 30px;
 }
 h1{
@@ -121,10 +127,12 @@ h1{
     padding: 0px 150px 0px 150px;
     display: flex;
     /* overflow: auto; */
-
-    
 }
 h4{
+    margin-top: 0px;
+    padding-left: 20px;
+}
+h5{
     margin-top: 0px;
     padding-left: 20px;
 }
@@ -140,4 +148,42 @@ h6{
     margin: 15px;
     height: 250px;
     border-radius: 20px;
+}
+.child2{
+    background-color: rgb(43 49 73);
+    width: 1545px;
+    color: white;
+}
+.child3{
+    display: flex;
+    padding: 0px 0px 0px 100px;
+}
+.img4{
+    height: 40px;
+    width: 40px;
+}
+.footer{}
+.f1{
+    background-color: rgb(49, 48, 53);
+    width: 1545px;
+    padding-left: 150px;
+    padding-top: 20px;
+    display: flex;
+    color: white;
+}
+.f2{
+    background-color: rgb(64, 64, 67);
+}
+.f3{
+    background-color: rgb(51, 51, 56);
+}
+.nbutton1{
+  font-size: 15px;  
+  font-family: inherit;
+  background-color: red;
+  margin: 4px 20px 26px 200px;
+  border-color: red;
+  padding: 4px 10px 4px 10px;
+  border-radius: 5px;
+  color: white;
 }
